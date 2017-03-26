@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+       .container{
+           width: 600px;
+           margin: 0 auto;
+       }
+        input {
+            width: 300px;
+            height: 60px;
+}
+           table{
+               text-align: center;
+               line-height: 40px;
+           }
+            .row{
+                border: 1px solid #000;
+                width: 100%;
+
+            }
+            .row td{
+                width: 100px;
+                height: 40px;
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+              <input type="text" id="put">
+              <table>
+                  <tr class="row">
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  </tr>
+                  <tr class="row">
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                  </tr>
+                  <tr class="row">
+                      <td>7</td>
+                      <td>8</td>
+                      <td>9</td>
+                  </tr>
+                  <tr class="row">
+                      <td id="add">+</td>
+                      <td id="slow">-</td>
+                      <td id="equal">=</td>
+
+                  </tr>
+
+                  <button>C</button>
+              </table>
+        </div>
+    </body>
+    <script>
+        var tds=document.getElementsByTagName("td");
+        var put= document.querySelector("input");
+        var button= document.querySelector("button");
+        var equal=document.getElementById("equal")
+        var add=document.getElementById("add")
+        var slow=document.getElementById("slow")
+        var val=put.value;
+
+
+        for(var i=0;i<tds.length;i++){
+            var td=tds[i];
+            td.onclick=function(){
+                put.value+=this.innerText;
+
+            }
+
+        }
+var val1;
+
+        var val2;
+        var result;
+        add.onclick=function(){
+            val1=put.value;
+            put.value="";
+            result=1;
+        }
+        slow.onclick=function(){
+            val1=put.value;
+            put.value="";
+            result=2;
+        }
+        equal.onclick=function(){
+        var val2=put.value;
+            if(result==1){
+                put.value=(val1-0)+(val2-0);
+            }
+           if(result==2){
+               put.value=val1-val2;
+           }
+
+        }
+        button.onclick=function(){
+            put.value="";
+        }
+    </script>
+</html>
