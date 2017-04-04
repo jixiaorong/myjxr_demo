@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+}
+a{
+    color: #333;
+    text-decoration:none;
+}
+em,s,i{
+    font-style: normal;
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin: 0 5% 0 15%;
+}
+.shouye{
+    position: relative;
+    width: 100%;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*header start*/
+.header{
+    height: 80px;
+    width: 100%;
+    background:url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+}
+.container .nav{
+    height: 30px;
+    background-color: #E3E4E5;
+    text-align: center;
+    padding-left: 84px;
+
+}
+.nav .left{
+    line-height: 30px;
+}
+.nav .right li{
+    float: left;
+    margin-right: 15px;
+    height: 100%;
+}
+.nav .right li .first{
+    color:red;
+}
+.nav .right li>a{
+    display: inline-block;
+    height: 30px;
+    width: 56px;
+    cursor:pointer;
+    text-align: center;
+    line-height: 30px;
+}
+.nav .right li .sj{
+    display: inline-block;
+    margin-left: 4px;
+    transform: rotate(-90deg);
+}
+.extra-l{
+    width: 15%;
+    float: left;
+   position: relative;
+    z-index: 2;
+}
+.extra-l .extra-l-b{
+    height: 480px;
+    background: #000;
+}
+.extra-l-t{
+    box-shadow: 1px 1px 1px #333;
+    background-color: #fff;
+    height: 98px;
+    padding-top: 80px;
+}
+.extra-l .extra-content{
+    text-align: center;
+    line-height: 14px;
+}
+.extra-l h2{
+    color: red;
+    font-size: 30px;
+}
+.extra-l p i{
+    font-size: 24px;
+    color: red;
+}
+.extra-l p span{
+    display: inline-block;
+    width: 6px;
+    height:6px;
+    border-radius: 50%;
+    background-color: red;
+
+}
+/*banner start*/
+.banner{
+    background-color: #F6F6F6;
+    position: relative;
+}
+.banner .banner-t{
+    height: 140px;
+    position:relative;
+    margin-bottom: 10px;
+}
+.banner .banner-t .car{
+    width: 188px;
+    height: 32px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    position: absolute;
+    top: 26px;
+    right: 136px;
+    line-height: 32px;
+    text-align: center;
+}
+.banner .banner-t .car span{
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: 132px;
+    padding: 3px 3px;
+    line-height: 14px;
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    border-radius: 40%;
+}
+.banner .banner-t .men-nav{
+    height: 42px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 68px;
+
+}
+.banner .men-nav ul{
+    text-align: center;
+    display: inline-block;
+    padding-left: 40px;
+
+}
+.banner .men-nav li{
+    float: left;
+    text-align: center;
+
+}
+.banner .men-nav li>a{
+    display: inline-block;
+    height: 14px;
+    width:80px;
+
+}
+.banner .banner-t .bottom-nav{
+    position: absolute;
+    bottom: 0;
+}
+.banner .bottom-nav li{
+    float: left;
+    margin-left: 10px;
+
+}
+.banner .bottom-nav li>a{
+    font-size: 20px;
+}
+.banner .banner-c{
+    height: 340px;
+    width: 790px;
+    overflow: hidden;
+    position: relative;
+}
+.banner .banner-c ul{
+    width: 3200px;
+    position: absolute;
+}
+.banner .banner-c li{
+    float: left;
+}
+.banner .circle ol{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -100px;
+    background-color: rgba(255,255,255,0.3);
+    width: 170px;
+    height: 14px;
+    text-align: center;
+    line-height: 18px;
+    padding-top: 4px;
+    padding-left: 30px;
+    border-radius:7px;
+
+}
+.banner .circle ol>li{
+    display: inline-block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.banner .banner-b{
+    height: 128px;
+    margin-top: 10px;
+    width: 790px;
+}
+.banner-b .banner-b-l{
+    height: 100%;
+    width: 390px;
+    background: url(../images/lunbo2.jpg) no-repeat;
+    background-size: cover;
+
+}
+.banner-b .banner-b-r{
+    height: 100%;
+    width: 390px;
+    background: url(../images/lunbo4.jpg) no-repeat;
+    background-size: cover;
+}
+.banner .erwei{
+    position: absolute;
+    right: 36px;
+    top: 24px;
+    background-color: red;
+    width: 70px;
+    height: 70px;
+    background: url(../images/5874a540N551f257e.jpg) no-repeat;
+    background-size: cover;
+}
+.banner .erweiBig{
+    width: 140px;
+    height: 140px;
+    background:url(../images/5874a54dNcec29924.jpg) no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.content-r{
+    width: 15%;
+    height: 480px;
+    background-color: pink;
+    position: absolute;
+    right:70px;
+    top: 258px;
+}
+
+/*logo start*/
+.logo{
+    height: 54px;
+    background-color: red;
+    margin-top: 10px;
+}
+.logo .logo-l,.logo-r{
+    height: 100%;
+    width: 40%;
+}
+.logo-l.fl{
+    position: relative;
+}
+.logo-l.fl em{
+    display: inline-block;
+    widht:0px;
+    height:0px;
+    border:10px dashed transparent;
+    border-top:10px solid #FFF;
+    border-left:10px solid #FFF;
+    position: absolute;
+}
+.logo-l.fl i{
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border: 8px solid transparent;
+    border-top: 8px solid #BD0311;
+    border-left:8px solid #BD0311 ;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+.logo .logo-r p{
+    text-align: center;
+    line-height:54px ;
+}
+.logo .logo-r span{
+display: inline-block;
+    width: 10px;
+    height: 24px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+}
+.logo-b ul{
+    width: 100%;
+    height: 240px;
+}
+.logo-b ul>li{
+    float: left;
+    width: 16%;
+    height: 100%;
+    text-align: center;
+}
+.logo-b ul>li:last-child{
+    background-color: #ccc;
+}
+.logo-b ul a{
+    background-color: #ccc;
+    display: inline-block;
+    cursor:pointer;
+    margin: 10px 5px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.logo-b ul a:hover{
+    border:3px solid #000000;
+}
+.logo-b ul p span{
+    color:red;
+}
+.logo-b ul p del{
+    color:#999;
+}

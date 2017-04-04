@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+<div class="banner container">
+
+    <div class="banner-c" id="bannerc">
+        <ul id="ul2">
+            <li><img src="./images/lunbo2.jpg" alt=""/></li>
+            <li><img src="./images/lunbo3.jpg" alt=""/></li>
+            <li><img src="./images/lunbo4.jpg" alt=""/></li>
+            <li><img src="./images/lunbo1.jpg" alt=""/></li>
+        </ul>
+        <div class="circle">
+            <ol id="ol">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+
+    </div>
+</div>
+</body>
+<script>
+    var ul=document.getElementById("ul2")
+    var imgs=ul.getElementsByTagName("li")
+    var circles=document.getElementById("ol").getElementsByTagName("li");
+    var bannerc=document.getElementById("bannerc");
+    var width=bannerc.offsetWidth;
+    for(var i=0;i<circles.length;i++){
+        circles[i].index=i;
+        circles[i].onmouseover=function(){
+            console.log(-(width*this.index)+"px");
+            ul.style.left=-(width*this.index)+"px";
+        }
+    }
+
+</script>
+</html>
